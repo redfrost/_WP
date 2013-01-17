@@ -232,7 +232,7 @@ function get_image_tag($id, $alt, $title, $align, $size='medium') {
 
 	$title = $title ? 'title="' . esc_attr( $title ) . '" ' : '';
 
-	$class = 'align' . esc_attr($align) .' size-' . esc_attr($size) . ' wp-image-' . $id;
+	$class = 'align' . esc_attr($align) .' size-' . esc_attr($size) . ' image-' . $id;
 	$class = apply_filters('get_image_tag_class', $class, $id, $align, $size);
 
 	$html = '<img src="' . esc_attr($img_src) . '" alt="' . esc_attr($alt) . '" ' . $title . $hwstring . 'class="' . $class . '" />';
